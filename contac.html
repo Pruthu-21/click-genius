@@ -70,20 +70,20 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
                         <div class="space-y-xs">
                             <label class="font-label-md text-label-md text-on-surface">Full Name *</label>
-                            <input
+                            <input id="name"
                                 class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none"
                                 placeholder="John Doe" required type="text">
                         </div>
                         <div class="space-y-xs">
                             <label class="font-label-md text-label-md text-on-surface">Email Address *</label>
-                            <input
+                            <input id="email"
                                 class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none"
                                 placeholder="john@example.com" required type="email">
                         </div>
                     </div>
                     <div class="space-y-xs">
                         <label class="font-label-md text-label-md text-on-surface">Subject</label>
-                        <select
+                        <select id="subject"
                             class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none appearance-none">
                             <option>Social Media Marketing</option>
                             <option>Content Strategy</option>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="space-y-xs">
                         <label class="font-label-md text-label-md text-on-surface">Your Message *</label>
-                        <textarea
+                        <textarea id="message"
                             class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none resize-none"
                             placeholder="How can we help your business grow?" required rows="5"></textarea>
                     </div>
@@ -176,7 +176,7 @@
                             <span class="font-label-md text-label-md text-primary">View on Google Maps</span>
                         </a>
                     </div>
-                </div>-->
+                </div>
             </div>
         </div>
     </main>
@@ -186,29 +186,6 @@
 
     <script src="components.js"></script>
     <script>
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = e.target.querySelector('button');
-            const originalHTML = btn.innerHTML;
-            btn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Sending...';
-            btn.classList.add('opacity-70');
-            btn.disabled = true;
-            setTimeout(() => {
-                btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Message Sent!';
-                btn.classList.remove('bg-secondary');
-                btn.classList.add('bg-green-600');
-                setTimeout(() => {
-                    btn.innerHTML = originalHTML;
-                    btn.classList.remove('bg-green-600', 'opacity-70');
-                    btn.classList.add('bg-secondary');
-                    btn.disabled = false;
-                    e.target.reset();
-                }, 3000);
-            }, 1500);
-        });
-    </script>
-
-    <script>
         document.getElementById("contactForm")
             .addEventListener("submit", async function (e) {
 
@@ -217,6 +194,7 @@
                 const data = {
                     name: document.getElementById("name").value,
                     email: document.getElementById("email").value,
+                    subject: document.getElementById("subject").value,
                     message: document.getElementById("message").value
                 };
 
