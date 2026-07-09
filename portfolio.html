@@ -34,6 +34,57 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+        .clients {
+            width: 100%;
+            padding: 60px 0;
+            overflow: hidden;
+        }
+
+        .clients h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .logo-slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-track {
+            display: flex;
+            align-items: center;
+            gap: 70px;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+
+        .logo-track img {
+            width: 170px;
+            height: 80px;
+            object-fit: contain;
+            opacity: .75;
+            transition: .3s;
+            filter: grayscale(100%);
+        }
+
+        .logo-track img:hover {
+            opacity: 1;
+            filter: grayscale(0%);
+            transform: scale(1.08);
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
     </style>
 </head>
 
@@ -88,87 +139,29 @@
         </section>
 
         <!-- Portfolio Grid -->
-        <div class="elementor-image-carousel swiper-wrapper" aria-live="off" id="swiper-wrapper-180a10d21057f51c03"
-            style="transform: translate3d(-730px, 0px, 0px); transition-duration: 500ms;">
-            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-roledescription="slide"
-                aria-label="8 / 9" style="width: 182.5px;" data-swiper-slide-index="7" aria-hidden="true" inert="">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/06/purpozo-super-specialist-brand-logo.png?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Purpozo Super Specialist Brand Logo"></figure>
+        <section class="clients">
+            <h2>Trusted by Brands</h2>
+
+            <div class="logo-slider">
+                <div class="logo-track">
+                    <!-- Original Logos -->
+                    <img src="images/logo1.png" alt="Client 1">
+                    <img src="images/logo2.png" alt="Client 2">
+                    <img src="images/logo3.png" alt="Client 3">
+                    <img src="images/logo4.png" alt="Client 4">
+                    <img src="images/logo5.png" alt="Client 5">
+                    <img src="images/logo6.png" alt="Client 6">
+
+                    <!-- Duplicate for infinite loop -->
+                    <img src="images/logo1.png" alt="Client 1">
+                    <img src="images/logo2.png" alt="Client 2">
+                    <img src="images/logo3.png" alt="Client 3">
+                    <img src="images/logo4.png" alt="Client 4">
+                    <img src="images/logo5.png" alt="Client 5">
+                    <img src="images/logo6.png" alt="Client 6">
+                </div>
             </div>
-            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-roledescription="slide"
-                aria-label="9 / 9" style="width: 182.5px;" data-swiper-slide-index="8" aria-hidden="true" inert="">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/06/univo-logo.png?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Univo Logo"></figure>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 / 9"
-                style="width: 182.5px;" aria-hidden="true" inert="" data-swiper-slide-index="0">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/06/amity-university-online-logo.png?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Amity University Online Logo"></figure>
-            </div>
-            <div class="swiper-slide swiper-slide-prev" role="group" aria-roledescription="slide" aria-label="2 / 9"
-                style="width: 182.5px;" data-swiper-slide-index="1" aria-hidden="true" inert="">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/03/saregama-logo.webp?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Saregama Logo"></figure>
-            </div>
-            <div class="swiper-slide swiper-slide-active" role="group" aria-roledescription="slide" aria-label="3 / 9"
-                style="width: 182.5px;" data-swiper-slide-index="2">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/06/da-iict-logo.png?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Da Iict Logo"></figure>
-            </div>
-            <div class="swiper-slide swiper-slide-next" role="group" aria-roledescription="slide" aria-label="4 / 9"
-                style="width: 182.5px;" data-swiper-slide-index="3">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/06/sig-group-logo.png?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Sig Group Logo"></figure>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 / 9"
-                style="width: 182.5px;" data-swiper-slide-index="4">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/03/1.webp?fit=300%2C140&amp;ssl=1"
-                        alt="1"></figure>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 / 9"
-                style="width: 182.5px;" data-swiper-slide-index="5">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/03/Interakt.webp?fit=300%2C140&amp;ssl=1"
-                        alt="Interakt"></figure>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 / 9"
-                style="width: 182.5px;" data-swiper-slide-index="6">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/03/B4U.webp?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client B4u Logo"></figure>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 / 9"
-                style="width: 182.5px;" data-swiper-slide-index="7">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/06/purpozo-super-specialist-brand-logo.png?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Purpozo Super Specialist Brand Logo"></figure>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 / 9"
-                style="width: 182.5px;" data-swiper-slide-index="8">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/06/univo-logo.png?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Univo Logo"></figure>
-            </div>
-            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-roledescription="slide"
-                aria-label="1 / 9" style="width: 182.5px;" data-swiper-slide-index="0">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/06/amity-university-online-logo.png?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Amity University Online Logo"></figure>
-            </div>
-            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" role="group"
-                aria-roledescription="slide" aria-label="2 / 9" style="width: 182.5px;" data-swiper-slide-index="1">
-                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                        src="https://i0.wp.com/www.socialee.in/wp-content/uploads/2024/03/saregama-logo.webp?fit=300%2C140&amp;ssl=1"
-                        alt="Our Client Saregama Logo"></figure>
-            </div>
-        </div>
+        </section>
 
 
 
